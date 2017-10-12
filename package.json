@@ -1,16 +1,16 @@
 {
     "name": "gactus",
     "description": "The personal blogging theme for Ghost. Beautiful, simple and responsive.",
-    "demo": "http://gactus.ghost.io",
+    "demo": "https://blog.gingerich.io",
     "version": "0.0.1",
     "engines": {
-        "ghost": ">=0.9.0 <1.0.0"
+        "ghost": ">=1.0.0"
     },
     "license": "MIT",
     "author": {
-        "name": "Giang Nguyen",
-        "email": "hello@giangnh.me",
-        "url": "https://giangnh.me"
+        "name": "Marlin Gingerich",
+        "email": "marlin@gingerich.io",
+        "url": "https://gingerich.io"
     },
     "keywords": [
         "ghost",
@@ -19,8 +19,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/hngiang/Gactus.git"
+        "url": "https://github.com/gingerich/gactus.git"
     },
-    "bugs": "https://github.com/hngiang/Gactus/issues",
-    "contributors": "https://github.com/hngiang/Gactus/graphs/contributors"
+    "bugs": "https://github.com/gingerich/gactus/issues"
 }

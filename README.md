@@ -2,7 +2,7 @@
 
 The personal blogging theme for [Ghost](http://github.com/hngiang/Gactus/). Beautiful, simple and responsive, base on [Kactus](https://github.com/nickbalestra/kactus).
 
-Demo: [Gactus](http://gactus.ghost.io).
+Demo: [Gactus](http://blog.gingerich.io).
 
 ## Add Disqus comment
 
