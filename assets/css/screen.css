@@ -1,3 +1,10 @@
+/* Variables */
+
+:root {
+    /* Colours */
+    --whitegrey: #e5eff5;
+}
+
 /* Reset */
 
 html,
@@ -107,6 +114,10 @@ body {
     line-height: 1
 }
 
+blockquote, dl, ol, p, ul {
+    margin: 0 0 1.5em;
+}
+
 blockquote,
 q {
     quotes: none
@@ -144,60 +155,6 @@ table {
 .hidden {
     display: none;
 }
-
-
-/* Icons */
-
-@font-face {
-    font-family: 'icons';
-    src: url('../fonts/icons.eot');
-    src: url('../fonts/icons.eot#iefix') format('embedded-opentype'), url('../fonts/icons.woff') format('woff'), url('../fonts/icons.ttf') format('truetype'), url('../fonts/icons.svg#icons') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-    font-family: "icons";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-    display: inline-block;
-    text-decoration: inherit;
-    text-align: center;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1em;
-}
-
-.icon-facebook:before {
-    content: '\e802';
-}
-
-.icon-facebook-squared:before {
-    content: '\e800';
-}
-
-.icon-twitter:before {
-    content: '\e801';
-}
-
-.icon-twitter-1:before {
-    content: '\e804';
-}
-
-.icon-facebook-circled:before {
-    content: '\e805';
-}
-
-.icon-twitter-circled:before {
-    content: '\e806';
-}
-
-.icon-facebook-rect:before {
-    content: '\e803';
-}
-
 
 /* Spacing */
 
@@ -241,7 +198,7 @@ h2 {
 
 .profile #wrapper {
     padding: 100px 0px 0px;
-    max-width: 600px;
+    max-width: 690px;
     margin: 0 auto;
 }
 
@@ -251,6 +208,10 @@ h2 {
     padding-bottom: 40px;
     text-align: center;
     position: relative;
+}
+
+.profile #header h1 {
+    text-transform: uppercase;
 }
 
 .profile #avatar {
@@ -309,13 +270,13 @@ nav.main-nav a.menu-border {
 }
 
 #wrapper {
-    max-width: 600px;
+    max-width: 690px;
     margin: 0 auto;
     padding: 60px 40px 100px 40px;
 }
 
 #wrapper.home {
-    max-width: 600px;
+    max-width: 690px;
     margin: 0 auto;
     padding: 0px 40px 20px 40px;
 }
@@ -360,14 +321,8 @@ a,
     transition: all 0.15s ease;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style-type: circle;
-    list-style-position: inside;
+ul, ol {
+    padding: 0 0 0 1em;
 }
 
 
@@ -443,7 +398,7 @@ i {
 .post h2.headline {
     /*font: italic 22px/1.3em Georgia,serif;*/
     font: normal 13px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: -5px 0 40px 0;
+    margin: -5px 0 65px 0;
     color: #b2b9be;
     font-size: 13px;
     text-transform: uppercase;
@@ -666,6 +621,8 @@ Post List
 }
 
 #post-meta {
+    display: flex;
+    flex-direction: row;
     font-size: 13px;
     font-weight: bold;
     line-height: 1.4;
@@ -701,13 +658,22 @@ Post List
 
 #post-meta div {
     margin: 0 25px 0 0;
-    float: left;
+    // float: left;
 }
 
-#sharing {
-    float: right;
-    margin: -2px;
+#post-meta .author-card {
+    flex: 1;
 }
+
+#post-meta .author-card .light {
+    color: #aaa;
+    font-weight: normal;
+}
+
+// #sharing {
+//     float: right;
+//     margin: -2px;
+// }
 
 #sharing a {
     font-size: 20px;
@@ -722,6 +688,22 @@ Post List
 #sharing a:hover {
     /*color: #444;*/
     opacity: 0.8;
+}
+
+#post-body code {
+    padding: 0 5px 2px;
+    font-size: 0.8em;
+    line-height: 1em;
+    font-weight: 400!important;
+    background: var(--whitegrey);
+    border-radius: 3px;
+}
+
+#post-body pre code {
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
 }
 
 

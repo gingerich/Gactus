@@ -9,12 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
     <link rel="stylesheet" href="{{asset "css/hl.css"}}" />
+    <link rel="stylesheet" href="{{asset "css/font-awesome.min.css"}}" />
     <link rel="stylesheet" href="{{asset "css/screen.css"}}" />
     {{ghost_head}}
 </head>
 <body>
     {{navigation}}
-    <section id="wrapper" class="home">
+    <section id="wrapper" class="home {{body_class}}">
         {{{body}}}
         {{> "footer"}}
     </section>
