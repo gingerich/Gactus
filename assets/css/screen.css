@@ -255,7 +255,7 @@ nav.main-nav a {
     top: 8px;
     right: 6px;
     padding: 8px 12px;
-    color: #5badf0;
+    color: #7bb0ff;
     font-size: 13px;
     /*font-weight: bold;*/
     line-height: 1.35;
@@ -300,7 +300,6 @@ a,
 #post-list li:hover .dates,
 #title:hover {
     text-decoration: none;
-    color: #5badf0;
     color: #5694f1;
 }
 
@@ -656,7 +655,7 @@ Post List
     color: #1E2025;
 }
 
-#post-meta div {
+#post-meta section {
     margin: 0 25px 0 0;
     // float: left;
 }
@@ -668,6 +667,14 @@ Post List
 #post-meta .author-card .light {
     color: #aaa;
     font-weight: normal;
+}
+
+.modal-dialog iframe {
+    height: 70vh;
+}
+
+.modal-footer .left-content {
+    flex: 1;
 }
 
 // #sharing {
